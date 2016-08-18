@@ -1,0 +1,37 @@
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #ccc;
+  background: #fff;
+  color: #000;
+  opacity: 0;
+  will-change: opacity;
+  pointer-events: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  z-index: 2;
+
+  @include transition(opacity 0.1s ease-in-out);
+
+  &.active {
+    pointer-events: all;
+    opacity: 1;
+  }
+}
+
+.search-error {
+  padding: 0 55px;
+}
+
+.search-result {
+  padding: 0 20px;
+
+  @media (min-width: 670px) {
+    padding: 0 55px;
+  }
+
+  &.active {
+    background: #ccc;
+  }
+}

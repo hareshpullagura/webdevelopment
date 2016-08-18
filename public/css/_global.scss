@@ -1,0 +1,89 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html body {
+  background: #ececec;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "Helvetica Neue","Helvetica","Nimbus Sans L","Arial","Liberation Sans",sans-serif;
+  line-height: 1.4;
+  color: #252525;
+}
+
+h1 {
+  font-size: 100%;
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: #002BB8;
+
+  &:visited {
+    color: #5A3696;
+  }
+}
+
+input.search {
+  outline: 0;
+  width: 100%;
+  background-color: #FFF !important;
+  -webkit-appearance: none;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+pre,
+code,
+kbd,
+samp,
+tt{
+  font-family:monospace,monospace;
+  font-size:1em;
+}
+
+button, textarea {
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+li,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: none;
+}
+
+button, label {
+  cursor: pointer;
+}

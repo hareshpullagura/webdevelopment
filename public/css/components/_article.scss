@@ -1,0 +1,63 @@
+.article-header {
+  & .heading-text {
+    @include display-flex;
+    @include flex-flow(row wrap);
+    @include align-items(center);
+  }
+  & .updated-meta {
+    font-size: 0.8rem;
+  }
+
+  & h1 {
+    margin-right: 0.3em;
+  }
+
+  & input[type=checkbox] {
+    display: none;
+  }
+
+  & .cache-toggle {
+    @include display-flex;
+    @include align-items(center);
+    @include justify-content(flex-end);
+    margin-left: auto;
+    padding: 0 16px;
+    font-size: 0.8rem;
+
+    @media (min-width: 720px) {
+      padding: 0 32px;
+    }
+  }
+}
+
+.article-container {
+  position: relative;
+
+  & .spinner {
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    @include transform(translateX(-50%));
+  }
+}
+
+.background-load-offer {
+  display: none;
+  margin-top: 104px;
+
+  .button-row {
+    text-align: right;
+  }
+
+  button {
+    margin: 0 0 0 auto;
+    color: #9C27B0;
+    text-transform: uppercase;
+    @include min-width-min-content;
+
+    &:focus {
+      outline: none;
+      color: #000;
+    }
+  }
+}
